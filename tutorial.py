@@ -49,8 +49,8 @@ for i in range(len(pi0)):
 
 # Plotting datasets together with legend (saving file)
 plt.title("Great Wave off Poincare")
-plt.plot(pi2T[0],pi2T[1],'b.',label="2*Pi Offset")
-plt.plot(pi4T[0],pi4T[1],'r.',label="4*Pi Offset")
+plt.plot(pi2T[0],pi2T[1],'y.',label="2*Pi Offset")
+plt.plot(pi4T[0],pi4T[1],'g.',label="4*Pi Offset")
 plt.plot(pi0T[0],pi0T[1],'k.',label="No Offset")
 plt.legend()
 plt.savefig('PoincareWave.png')
