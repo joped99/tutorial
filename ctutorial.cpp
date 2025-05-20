@@ -152,7 +152,8 @@ int main(){
     cout << "Hello World" << endl;
 
     // variables, loops, if/else, functions, classes, file i/o
-    pend swing;
+    // this is most of a file written for my PH 385 class
+    pend swing; // intialize object
 
     // swing.init();
     swing.hardInit();

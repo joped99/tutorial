@@ -21,13 +21,14 @@ plt.savefig('gaussian.png')
 plt.show()
 
 # variables, loops, if/else, file i/o
-pi2=[[float(x) for x in line.split()] # reading three different data files from another project
+# reading three different data files from another project
+pi2=[[float(x) for x in line.split()] # pi/2 offset
      for line in open("pass5pi2Poincare.txt", "r").readlines()]
 
-pi4=[[float(x) for x in line.split()]
+pi4=[[float(x) for x in line.split()] # pi/4 offset
      for line in open("pass5pi4Poincare.txt", "r").readlines()]
 
-pi0=[[float(x) for x in line.split()]
+pi0=[[float(x) for x in line.split()] # no offset
      for line in open("pass50Poincare.txt", "r").readlines()]
 
 # Transposing data for plotting
