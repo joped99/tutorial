@@ -18,7 +18,7 @@ y=Gauss(x,5,2) # distribution with mean of 5, std of 2
 plt.plot(x,y) # plotting data with title, and saving to file
 plt.title("Normalized Gaussian")
 plt.savefig('gaussian.png')
-plt.show()
+plt.close()
 
 # variables, loops, if/else, file i/o
 # reading three different data files from another project
@@ -54,7 +54,7 @@ plt.plot(pi4T[0],pi4T[1],'r.',label="4*Pi Offset")
 plt.plot(pi0T[0],pi0T[1],'k.',label="No Offset")
 plt.legend()
 plt.savefig('PoincareWave.png')
-plt.show()
+plt.close()
 
 # saving concatenated data
 f=open("new.txt", "w")
