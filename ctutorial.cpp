@@ -61,6 +61,20 @@ class pend{
             g=9.811;
         }
 
+        // initialization without user input
+        void hardestInit(){
+            theta[0]=0.2;
+            omega[0]=0.0;
+            l=9.8;
+            q=0.5;
+            Fd=1.2;
+            omegad=2.0/3.0;
+            dt=0.1;
+            fileName = "ORCexec";
+            t[0]=0.0;
+            g=9.811;
+        }
+
         // angular acceleration function
         double alpha(double angle, double vel, double tim){
             return -1*sin(angle)*g/l - q*vel + Fd*sin(omegad*tim);
@@ -156,7 +170,7 @@ int main(){
     pend swing; // intialize object
 
     // swing.init();
-    swing.hardInit();
+    swing.hardestInit();
     swing.run();
     
     // saving Poincare data for different phases
